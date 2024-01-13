@@ -116,7 +116,7 @@ Array.from(headers).forEach(function(header) {
         var scrollPosition = calculateScrollPosition(card);
 
         // Scroll the container to the calculated position smoothly
-        card.parentElement.scroll({
+        card.parentElement.parentElement.scroll({
             left: scrollPosition,
             behavior: 'smooth'
         });
